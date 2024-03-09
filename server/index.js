@@ -27,10 +27,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "https://study-notion-frontend-dun.vercel.app",
-		credentials: true,
+		origin:"http://localhost:10000",
+		credentials:true,
 	})
-);
+)
 app.use(
 	fileUpload({
 		useTempFiles: true,
